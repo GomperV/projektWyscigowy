@@ -2469,6 +2469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21763c83637a1c49b03a1de78f58572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  networkText: {fileID: 1552393839}
   playerName: {fileID: 121832289}
 --- !u!1 &1166819374
 GameObject:
@@ -3494,7 +3495,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157914937}
         m_TargetAssemblyTypeName: RaceLauncher, Assembly-CSharp
-        m_MethodName: StartTrial
+        m_MethodName: ConnectNetwork
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

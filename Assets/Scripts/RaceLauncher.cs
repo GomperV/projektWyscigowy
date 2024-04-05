@@ -17,8 +17,10 @@ public class RaceLauncher : MonoBehaviourPunCallbacks
     void Awake()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
-        if (PlayerPrefs.HasKey("PlayerName")) playerName.text =
-        PlayerPrefs.GetString("PlayerName");
+        if (PlayerPrefs.HasKey("PlayerName"))
+        {
+            playerName.text = PlayerPrefs.GetString("PlayerName");
+        }
     }
 
     public override void OnConnectedToMaster()
