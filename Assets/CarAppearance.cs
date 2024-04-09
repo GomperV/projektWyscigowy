@@ -17,17 +17,14 @@ public class CarAppearance : MonoBehaviour
         if (playerNumber == 0)
         {
             playerName = PlayerPrefs.GetString("PlayerName");
-            carColor = IntToColor(PlayerPrefs.GetInt("Red"),
-
-            PlayerPrefs.GetInt("Green"), PlayerPrefs.GetInt("Blue"));
+            carColor = IntToColor(PlayerPrefs.GetInt("Red"), PlayerPrefs.GetInt("Green"), PlayerPrefs.GetInt("Blue"));
         }
         else
         {
             playerName = "Random " + playerNumber;
-            carColor = new Color(Random.Range(0f, 255f) / 255, Random.Range(0f, 255f) / 255,
-
-            Random.Range(0f, 255f) / 255);
+            carColor = new Color(Random.Range(0f, 255f) / 255, Random.Range(0f, 255f) / 255, Random.Range(0f, 255f) / 255);
         }
+
         nameText.text = playerName;
         carRenderer.material.color = carColor;
         nameText.color = carColor;

@@ -5,13 +5,15 @@ using Photon.Pun;
 public class OnlinePlayer : MonoBehaviourPunCallbacks
 {
     public static GameObject LocalPlayerInstance;
-    private void Awake()
+    // Start is called before the first frame update
+    void Awake()
     {
-        if (photonView.IsMine)
+        if(photonView.IsMine)
         {
             LocalPlayerInstance = gameObject;
         }
     }
+
     // Update is called once per frame
     void Update()
     {
